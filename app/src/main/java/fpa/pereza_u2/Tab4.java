@@ -11,9 +11,10 @@ import android.widget.TextView;
 
 public class Tab4 extends Fragment {
 
-    private Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnClear, btnEquals, btnAdd;
+    private Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnClear, btnEquals, btnAdd, p2e, e2p;
     private TextView screen;
     private int val1 = 0, val2 = 0;
+    private String TAG_DEBUG = "DEBUG LABEL";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,11 +40,17 @@ public class Tab4 extends Fragment {
         btnEquals = view.findViewById(R.id.equals_btn);
         btnAdd = view.findViewById(R.id.add_btn);
         screen = view.findViewById(R.id.operations);
+
+        e2p = view.findViewById(R.id.operations);
+        p2e = view.findViewById(R.id.operations);
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (screen.getText() != "")
+                if (!screen.getText().toString().equals(""))
+                {
+                    //Log.d(TAG_DEBUG, "El valor de screen es: " + screen.getText().toString());
                     screen.append("0");
+                }
             }
         });
 
@@ -122,7 +129,7 @@ public class Tab4 extends Fragment {
             public void onClick(View view) {
 
                 AddOperation();
-                screen.setText(Integer.toString(val1));
+                //screen.setText(Integer.toString(val1));
 
             }
         });
@@ -137,7 +144,7 @@ public class Tab4 extends Fragment {
     }
 
     private void AddOperation() {
-        if (screen.getText() != "") {
+        if (!screen.getText().toString().equals("")) {
             val2 = Integer.parseInt(screen.getText().toString());
             val1 += val2;
             screen.setText("");
@@ -145,7 +152,7 @@ public class Tab4 extends Fragment {
     }
 
     private void EqualOperation() {
-        if (screen.getText() != "") {
+        if (!screen.getText().toString().equals("")) {
             val1 += Integer.parseInt(screen.getText().toString());
             screen.setText(val1);
         }

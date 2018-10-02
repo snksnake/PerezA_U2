@@ -24,4 +24,16 @@
         <item name="android:padding">4dp</item>
     </style>
 
+    <style name="ButtonStyles">
+        <!-- Customize your theme here. -->
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/darkScreencolor</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="TittleStyles">
+        <!-- Customize your theme here. -->
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
 </resources>

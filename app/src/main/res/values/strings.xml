@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PerezA_U2</string>
+    <string name="asteroidstext">Asteroides</string>
+    <string name="playtext">Jugar</string>
+    <string name="conftext">Configuracion</string>
+    <string name="about">Acerca de</string>
+    <string name="exit">Salir</string>
 </resources>

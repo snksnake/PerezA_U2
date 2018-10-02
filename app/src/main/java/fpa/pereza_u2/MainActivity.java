@@ -10,19 +10,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         tabHost= findViewById(android.R.id.tabhost);
         tabHost.setup(this,
                 getSupportFragmentManager(),android.R.id.tabcontent);
 
-        tabHost.addTab(tabHost.newTabSpec("tab1").setIndicator("Asteroides"),
+        tabHost.addTab(tabHost.newTabSpec("tab1").setIndicator("Tab1"),
                 Tab1.class, null);
-        tabHost.addTab(tabHost.newTabSpec("tab2").setIndicator("Constraint"),
+        tabHost.addTab(tabHost.newTabSpec("tab2").setIndicator("Tab2"),
                 Tab2.class, null);
-        tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("Lengüeta 3"),
+        tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("Tab3"),
                 Tab3.class, null);
-        tabHost.addTab(tabHost.newTabSpec("tab4").setIndicator("Lengüeta 4"),
+        tabHost.addTab(tabHost.newTabSpec("tab4").setIndicator("Aste"),
                 Tab4.class, null);
 
     }
