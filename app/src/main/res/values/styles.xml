@@ -18,7 +18,7 @@
     </style>
 
     <style name="NumberStyles">
-        <!-- Customize your theme here. -->
+        <!-- Customize your themTittleStylese here. -->
         <item name="android:textSize">40dp</item>
         <item name="android:textColor">@color/darkScreencolor</item>
         <item name="android:padding">4dp</item>
@@ -36,6 +36,7 @@
         <item name="android:textSize">40dp</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">15dp</item>
         <item name="android:gravity">center</item>
     </style>
 </resources>

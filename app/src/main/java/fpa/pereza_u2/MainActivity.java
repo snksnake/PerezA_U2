@@ -17,13 +17,13 @@ public class MainActivity extends AppCompatActivity {
         tabHost.setup(this,
                 getSupportFragmentManager(),android.R.id.tabcontent);
 
-        tabHost.addTab(tabHost.newTabSpec("tab1").setIndicator("Tab1"),
+        tabHost.addTab(tabHost.newTabSpec("tab1").setIndicator("Aster"),
                 Tab1.class, null);
-        tabHost.addTab(tabHost.newTabSpec("tab2").setIndicator("Tab2"),
+        tabHost.addTab(tabHost.newTabSpec("tab2").setIndicator("Tab1"),
                 Tab2.class, null);
-        tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("Tab3"),
+        tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("Tab2"),
                 Tab3.class, null);
-        tabHost.addTab(tabHost.newTabSpec("tab4").setIndicator("Aste"),
+        tabHost.addTab(tabHost.newTabSpec("tab4").setIndicator("Tab3"),
                 Tab4.class, null);
 
     }
