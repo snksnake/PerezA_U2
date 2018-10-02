@@ -10,33 +10,33 @@
 
     <style name="ScreenStye" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="android:textSize">60dp</item>
+        <item name="android:textSize">60sp</item>
         <item name="android:textColor">@color/darkScreencolor</item>
         <item name="android:maxLength">10</item>
-        <item name="android:paddingBottom">4dp</item>
-        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">4sp</item>
+        <item name="android:paddingTop">10sp</item>
     </style>
 
     <style name="NumberStyles">
         <!-- Customize your themTittleStylese here. -->
-        <item name="android:textSize">40dp</item>
+        <item name="android:textSize">30sp</item>
         <item name="android:textColor">@color/darkScreencolor</item>
-        <item name="android:padding">4dp</item>
+        <item name="android:padding">4sp</item>
     </style>
 
     <style name="ButtonStyles">
         <!-- Customize your theme here. -->
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/darkScreencolor</item>
-        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_margin">4sp</item>
     </style>
 
     <style name="TittleStyles">
         <!-- Customize your theme here. -->
-        <item name="android:textSize">40dp</item>
+        <item name="android:textSize">40sp</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
-        <item name="android:paddingTop">10dp</item>
-        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">10sp</item>
+        <item name="android:paddingBottom">15sp</item>
         <item name="android:gravity">center</item>
     </style>
 </resources>

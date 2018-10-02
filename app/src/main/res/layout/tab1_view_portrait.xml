@@ -46,6 +46,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@color/buttonPlay"
+                    android:drawableBottom="@mipmap/img_play"
+                    android:drawablePadding="5dp"
                     android:text="@string/playtext"/>
 
                 <Button
@@ -56,6 +58,8 @@
                     android:layout_weight="1"
                     android:background="@color/buttonConfig"
                     android:text="@string/conftext"
+                    android:drawableBottom="@mipmap/img_config"
+                    android:drawablePadding="5dp"
                     />
             </LinearLayout>
 
@@ -71,7 +75,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@color/buttonAbout"
-                    android:text="@string/about" />
+                    android:text="@string/about"
+                    android:drawableBottom="@mipmap/img_about"
+                    android:drawablePadding="5dp"/>
 
                 <Button
                     android:id="@+id/btn_exit"
@@ -80,7 +86,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@color/buttonExit"
-                    android:text="@string/exit" />
+                    android:text="@string/exit"
+                    android:drawableBottom="@mipmap/img_logout"
+                    android:drawablePadding="5dp"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
