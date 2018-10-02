@@ -33,7 +33,9 @@
 
     <style name="TittleStyles">
         <!-- Customize your theme here. -->
-        <item name="android:textSize">30dp</item>
+        <item name="android:textSize">40dp</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:gravity">center</item>
     </style>
 </resources>

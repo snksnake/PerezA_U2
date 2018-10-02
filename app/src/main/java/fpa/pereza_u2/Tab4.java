@@ -41,8 +41,8 @@ public class Tab4 extends Fragment {
         btnAdd = view.findViewById(R.id.add_btn);
         screen = view.findViewById(R.id.operations);
 
-        e2p = view.findViewById(R.id.operations);
-        p2e = view.findViewById(R.id.operations);
+        e2p = view.findViewById(R.id.e2p);
+        p2e = view.findViewById(R.id.p2e);
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
