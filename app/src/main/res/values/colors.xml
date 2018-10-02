@@ -12,4 +12,8 @@
     <color name="buttonConfig">#F9E79F</color>
 
     <color name="backgroundLayout">#D7DBDD</color>
+
+    <color name="gradientEnd">#d8f0f3</color>
+
+    <color name="graddientTop">#80ced6</color>
 </resources>

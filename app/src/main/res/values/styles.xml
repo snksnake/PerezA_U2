@@ -10,11 +10,12 @@
 
     <style name="ScreenStye" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="android:textSize">60sp</item>
+        <item name="android:textSize">35sp</item>
         <item name="android:textColor">@color/darkScreencolor</item>
         <item name="android:maxLength">10</item>
         <item name="android:paddingBottom">4sp</item>
         <item name="android:paddingTop">10sp</item>
+        <item name="android:gravity">right</item>
     </style>
 
     <style name="NumberStyles">

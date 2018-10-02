@@ -15,6 +15,9 @@ public class Tab4 extends Fragment {
     private TextView screen;
     private int val1 = 0, val2 = 0;
     private String TAG_DEBUG = "DEBUG LABEL";
+    private final static double euro_value = 166.386;
+    String reserva, operador, mostrar;
+    private int resultado;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -121,23 +124,65 @@ public class Tab4 extends Fragment {
             @Override
             public void onClick(View view) {
                 screen.setText("");
+                val1 = 0;
+                val2 = 0;
+            }
+        });
+
+        e2p.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!screen.getText().toString().equals("")) {
+                    double eur = Double.parseDouble(screen.getText().toString());
+                    double result = eur * euro_value;
+                    screen.setText("");
+                    screen.setText(String.valueOf(result));
+                }
+            }
+        });
+
+        p2e.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!screen.getText().toString().equals("")) {
+                    double eur = Double.parseDouble(screen.getText().toString());
+                    double result = eur / euro_value;
+                    screen.setText("");
+                    screen.setText(String.valueOf(result));
+                }
             }
         });
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 AddOperation();
                 //screen.setText(Integer.toString(val1));
-
             }
         });
 
         btnEquals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EqualOperation();
+                mostrar = screen.getText().toString();
+                mostrar = mostrar + "1";
+                if(operador.equals("-")){
+                    resultado = Integer.parseInt(reserva) -Integer.parseInt(screen.getText().toString());
+                    screen.setText(String.valueOf(resultado));
+                }
+                if(operador.equals("+")){
+                    resultado = Integer.parseInt(reserva) + Integer.parseInt(screen.getText().toString());
+                    screen.setText(String.valueOf(resultado));
+                    Log.d(TAG_DEBUG, "Valor " + String.valueOf(resultado));
+                }
+                if(operador.equals("/")){
+                    resultado = Integer.parseInt(reserva) / Integer.parseInt(screen.getText().toString());
+                    screen.setText(String.valueOf(resultado));
+                }
+                if(operador.equals("*")){
+                    resultado = Integer.parseInt(reserva) * Integer.parseInt(screen.getText().toString());
+                    screen.setText(String.valueOf(resultado));
+                }
             }
         });
         return view;
@@ -145,16 +190,9 @@ public class Tab4 extends Fragment {
 
     private void AddOperation() {
         if (!screen.getText().toString().equals("")) {
-            val2 = Integer.parseInt(screen.getText().toString());
-            val1 += val2;
+            reserva = screen.getText().toString();
+            operador = "+";
             screen.setText("");
-        }
-    }
-
-    private void EqualOperation() {
-        if (!screen.getText().toString().equals("")) {
-            val1 += Integer.parseInt(screen.getText().toString());
-            screen.setText(val1);
         }
     }
 }
