@@ -49,8 +49,7 @@ public class Tab4 extends Fragment {
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!screen.getText().toString().equals(""))
-                {
+                if (!screen.getText().toString().equals("")) {
                     //Log.d(TAG_DEBUG, "El valor de screen es: " + screen.getText().toString());
                     screen.append("0");
                 }
@@ -132,7 +131,7 @@ public class Tab4 extends Fragment {
         e2p.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!screen.getText().toString().equals("")) {
+                if (!screen.getText().toString().equals("")) {
                     double eur = Double.parseDouble(screen.getText().toString());
                     double result = eur * euro_value;
                     screen.setText("");
@@ -144,7 +143,7 @@ public class Tab4 extends Fragment {
         p2e.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!screen.getText().toString().equals("")) {
+                if (!screen.getText().toString().equals("")) {
                     double eur = Double.parseDouble(screen.getText().toString());
                     double result = eur / euro_value;
                     screen.setText("");
@@ -164,27 +163,30 @@ public class Tab4 extends Fragment {
         btnEquals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mostrar = screen.getText().toString();
-                mostrar = mostrar + "1";
-                if(operador.equals("-")){
-                    resultado = Integer.parseInt(reserva) -Integer.parseInt(screen.getText().toString());
-                    screen.setText(String.valueOf(resultado));
-                }
-                if(operador.equals("+")){
-                    resultado = Integer.parseInt(reserva) + Integer.parseInt(screen.getText().toString());
-                    screen.setText(String.valueOf(resultado));
-                    Log.d(TAG_DEBUG, "Valor " + String.valueOf(resultado));
-                }
-                if(operador.equals("/")){
-                    resultado = Integer.parseInt(reserva) / Integer.parseInt(screen.getText().toString());
-                    screen.setText(String.valueOf(resultado));
-                }
-                if(operador.equals("*")){
-                    resultado = Integer.parseInt(reserva) * Integer.parseInt(screen.getText().toString());
-                    screen.setText(String.valueOf(resultado));
+                if (!screen.getText().toString().equals("")) {
+                    mostrar = screen.getText().toString();
+                    mostrar = mostrar + "1";
+                    if (operador.equals("-")) {
+                        resultado = Integer.parseInt(reserva) - Integer.parseInt(screen.getText().toString());
+                        screen.setText(String.valueOf(resultado));
+                    }
+                    if (operador.equals("+")) {
+                        resultado = Integer.parseInt(reserva) + Integer.parseInt(screen.getText().toString());
+                        screen.setText(String.valueOf(resultado));
+                        Log.d(TAG_DEBUG, "Valor " + String.valueOf(resultado));
+                    }
+                    if (operador.equals("/")) {
+                        resultado = Integer.parseInt(reserva) / Integer.parseInt(screen.getText().toString());
+                        screen.setText(String.valueOf(resultado));
+                    }
+                    if (operador.equals("*")) {
+                        resultado = Integer.parseInt(reserva) * Integer.parseInt(screen.getText().toString());
+                        screen.setText(String.valueOf(resultado));
+                    }
                 }
             }
         });
+
         return view;
     }
 

@@ -12,8 +12,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/title"
@@ -25,7 +25,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/asteroid"/>
+                android:src="@drawable/asteroid" />
         </LinearLayout>
 
         <LinearLayout
@@ -48,7 +48,7 @@
                     android:background="@color/buttonPlay"
                     android:drawableBottom="@mipmap/img_play"
                     android:drawablePadding="5dp"
-                    android:text="@string/playtext"/>
+                    android:text="@string/playtext" />
 
                 <Button
                     android:id="@+id/btn_confi"
@@ -57,10 +57,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@color/buttonConfig"
-                    android:text="@string/conftext"
                     android:drawableBottom="@mipmap/img_config"
                     android:drawablePadding="5dp"
-                    />
+                    android:text="@string/conftext" />
             </LinearLayout>
 
             <LinearLayout
@@ -75,9 +74,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@color/buttonAbout"
-                    android:text="@string/about"
                     android:drawableBottom="@mipmap/img_about"
-                    android:drawablePadding="5dp"/>
+                    android:drawablePadding="5dp"
+                    android:text="@string/about" />
 
                 <Button
                     android:id="@+id/btn_exit"
@@ -86,9 +85,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@color/buttonExit"
-                    android:text="@string/exit"
                     android:drawableBottom="@mipmap/img_logout"
-                    android:drawablePadding="5dp"/>
+                    android:drawablePadding="5dp"
+                    android:text="@string/exit" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

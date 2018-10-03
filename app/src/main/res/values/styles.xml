@@ -32,6 +32,13 @@
         <item name="android:layout_margin">4sp</item>
     </style>
 
+    <style name="ButtonEj2Styles">
+        <!-- Customize your theme here. -->
+        <item name="android:textSize">100sp</item>
+        <item name="android:textColor">@color/darkScreencolor</item>
+        <item name="android:layout_margin">4sp</item>
+    </style>
+
     <style name="TittleStyles">
         <!-- Customize your theme here. -->
         <item name="android:textSize">40sp</item>
@@ -39,5 +46,14 @@
         <item name="android:paddingTop">10sp</item>
         <item name="android:paddingBottom">15sp</item>
         <item name="android:gravity">center</item>
+    </style>
+
+    <style name="LoremIpsumStyle">
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="RoundedButton" parent="ButtonStyles">
+        <item name="android:textColor">@color/buttonAbout</item>
     </style>
 </resources>
